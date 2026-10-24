@@ -1,3 +1,4 @@
+// Feito por Vinícius de Jesus
 //o codigo precisa implementar 3 funções uma após a outra.
 //Primeira: é da cifra de Vegenere
 //Segunda: Repete a 1 e a ultima letra, e as do meio inverte a ordem.
@@ -12,8 +13,6 @@ function vegenere(tam, palavra, key){
 
     if(divisao != 0)
         key = Array(divisao).fill(key).flat();   //problema ta aqui
-
-    console.log(key);
 
     if(resto != 0){
         
@@ -99,8 +98,11 @@ function terceira_parte(palavra, tam, palavra_saida){
     }
 }
 
-function main(){
-    let palavra =  "guiahevabweb";
+function main(palavra){
+
+    
+
+    //let palavra =  "guiahevabweb";
     palavra = palavra.toLowerCase();
     let palavra_saida;
     const tam = palavra.length;
@@ -112,6 +114,14 @@ function main(){
     palavra_saida = terceira_parte(palavra, tam, palavra_saida);
     console.log(palavra);
     console.log(palavra_saida);
+    entrada.close();
 }
 
-main();
+const readline = require("node:readline");
+
+const entrada = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+entrada.question("Digite uma palavra: ", main);
