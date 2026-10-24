@@ -12,7 +12,7 @@ function vegenere(tam, palavra, key){
     let divisao = Math.trunc(tam/6);
 
     if(divisao != 0)
-        key = Array(divisao).fill(key).flat();   //problema ta aqui
+        key = Array(divisao).fill(key).flat();
 
     if(resto != 0){
         
