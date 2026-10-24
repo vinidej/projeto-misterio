@@ -100,9 +100,6 @@ function terceira_parte(palavra, tam, palavra_saida){
 
 function main(palavra){
 
-    
-
-    //let palavra =  "guiahevabweb";
     palavra = palavra.toLowerCase();
     let palavra_saida;
     const tam = palavra.length;
