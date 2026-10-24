@@ -6,6 +6,10 @@ Este repositório contém a implementação da atividade da **Semana 3.2 do Nive
 
 O código foi desenvolvido para ser **executado e testado diretamente pelo terminal**, utilizando Node.js.
 
+A IA foi utilizada para tirar dúvidas de sintaxe de JS e funcionamento de algumas funções.
+
+Confesso que a segunda etapa eu destrinchei todos os dados mas não encontrava um padrão neles. Eu sabia que a criptografia dependia da quantidade de letras da palavra e que alternava entre repetir vogais e consoantes a depender do tamanho dela. E que as de tamanho par eram vogais e as ímpares eram consoantes. Mas alguns casos falhava e eu não encontrava o padrão nessas falhas. Ao perguntar se existia alguma cifra que explicasse isso a IA me mostrou que o padrão estava em todos os ímpares não primos falharem com a alternância e exibirem as vogais invés de consoantes. 
+
 ## Funcionamento do algoritmo
 
 O processo de criptografia é dividido em três estágios.
